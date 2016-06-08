@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <header>
+    <% if @user %>
+        <span>Inloggad som <%= @user.username %></span>
+          <button type="submit">Logga ut</button>
+        </form>
+    <% else %>
+        <div id="login">
+          <form action="/login" method="post">
+            <input name="username" type="text" placeholder="username">
+            <input name="password" type="password" placeholder="password">
+            <button type="submit">Logga in</button>
+          </form>
+        </div>
+    <%end%>
+    <div id="Rubrik"><h1>ToDoList</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="underrubrik"><h1>Welcome to ToDoList</h1></div>
+    <div class="register">
+      <a href="/register"><h2>Register Here!</h2></a>
+    </div>
+
+
+  <main>
+
+  </main>
+
+
+  </div>
+  </div>

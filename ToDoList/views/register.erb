@@ -1,0 +1,48 @@
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Register</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris sagittis pellentesque lacus eleifend lacinia...
+      </div>
+
+
+      <p><%= flash[:error] %></p>
+    <form action="/register" method="post">
+      <div class="mdl-card__actions mdl-card--border">
+
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" name="first_name" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Firstname</label>
+          </div>
+
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" name="last_name" id="sample1">
+              <label class="mdl-textfield__label" for="sample1">Lastname</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="email" name="mail" id="sample1">
+              <label class="mdl-textfield__label" for="sample1">Email</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" name="username" id="sample1">
+              <label class="mdl-textfield__label" for="sample1">Username</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="password" name="password" id="sample1">
+              <label class="mdl-textfield__label" for="sample1">Password</label>
+                <div class="reg-knapp">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                    Register
+                  </button>
+                </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>

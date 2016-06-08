@@ -1,0 +1,33 @@
+<div id="wrapper">
+  <header>
+
+    <div id="Rubrik"><h1>ToDoList</h1>
+    </div>
+    <div class="namn">
+      <span>Inloggad som <%= @user.username %></span>
+      <form action="/logout" method="get">
+        <button type="submit">Logga ut</button>
+      </form>
+    </div>
+  </header>
+
+<body>
+  <div class="inputs">
+    <form action="/create_task" method="post">
+
+      <div class="input_title">
+        <textarea id="wmd-input" class="wmd-input processed" name="title" cols="40" rows="3" tabindex="101" data-min-length="" placeholder="Title, must be filled"></textarea>
+      </div>
+
+      <div class="input_description">
+        <textarea id="wmd-input" class="wmd-input processed" name="description" cols="92" rows="15" tabindex="101" data-min-length="" placeholder="Description, must be filled"></textarea>
+      </div>
+
+      <input type="file" id="myFile">
+
+        <button id="task_button" type="submit">Create task</button>
+    </form>
+  </div>
+</body>
+
+</div>
